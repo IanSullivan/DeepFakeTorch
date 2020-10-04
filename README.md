@@ -15,7 +15,7 @@ activate torchfakes
 
 ## Results
 
-<img src='images/swapped.gif>
+<img src="images/swapped.gif">
 
 ```python
 
