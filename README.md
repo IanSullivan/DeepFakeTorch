@@ -22,6 +22,7 @@ python facedetect.py
 ## Results
 
 <img src="images/swapped.gif">
+<img src="images/b_to_a.gif">
 
 ```python
 
