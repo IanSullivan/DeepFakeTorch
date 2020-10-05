@@ -17,7 +17,8 @@ https://www.youtube.com/watch?v=XqluthtTenI
 
 ### Extract Faces
 ```shell
-python facedetect.py -video_src data_src.mp4 -out_name [directory a or b]
+python facedetect.py -video_src data_src.mp4 -out_name a
+python facedetect.py -video_src data_dst.mp4 -out_name b
 ```
 
 ---
@@ -40,3 +41,7 @@ python video_writer.py -original_video [src video] -model_location saved_models/
 Training after 10,000 steps <br>
 <img src="images/swapped.gif"> <br>
 <img src="images/b_to_a.gif">
+
+## TO DO LIST (if possible)
+- [ ] Smooth images on swapped video
+- [ ] Add colour correction to swapped faces
