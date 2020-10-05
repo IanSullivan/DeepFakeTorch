@@ -50,7 +50,7 @@ if __name__ == '__main__':
     if not os.path.exists(full_dir):
         os.makedirs(full_dir)
 
-    cap = cv2.VideoCapture(args.video_name)
+    cap = cv2.VideoCapture(args.video_src)
     i = 0
     while cap.isOpened():
         ret, frame = cap.read()
