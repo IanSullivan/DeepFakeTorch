@@ -26,7 +26,14 @@ python train.py -face_a_dir[location of first faces] -face_b_dir[location of sec
 
 ---
 
+### Write Video
+```shell
+python video_writer.py -original_video [src video] -model_location saved_models/model.pt -out_name myswappedvideo -decoder [either 'a' or 'b']
+```
+
+---
+
 ## Results
 Training after 10,000 steps <br>
-<img src="images/swapped.gif">
+<img src="images/swapped.gif"> <br>
 <img src="images/b_to_a.gif">
