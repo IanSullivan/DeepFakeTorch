@@ -22,8 +22,8 @@ https://arxiv.org/abs/2005.05535
 
 ### Extract Faces
 ```shell
-python facedetect.py -video_src data_src.mp4 -out_name a
-python facedetect.py -video_src data_dst.mp4 -out_name b
+python face_detect.py -video_src data_src.mp4 -out_name a
+python face_detect.py -video_src data_dst.mp4 -out_name b
 ```
 
 ---
