@@ -14,7 +14,14 @@ pip install requirments.txt
 
 ### Extract Faces
 ```shell
-python facedetect.py
+python facedetect.py -video_src data_src.mp4 -out_name [directory a or b]
+```
+
+---
+
+### Train Model
+```shell
+python train.py -face_a_dir[location of first faces] -face_b_dir[location of seconds faces] -n_steps 100000
 ```
 
 ---
