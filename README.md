@@ -10,7 +10,7 @@ conda create --name torchfakes
 activate torchfakes
 git clone https://github.com/IanSullivan/DeepFakeTorch.git
 cd DeepFakeTorch
-pip install requirments.txt
+pip install -r requirements.txt
 ```
 
 ### How it works
