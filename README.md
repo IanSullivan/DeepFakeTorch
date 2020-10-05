@@ -17,6 +17,8 @@ pip install -r requirements.txt
 youtube video
 https://www.youtube.com/watch?v=XqluthtTenI 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XqluthtTenI" frameborder="0" allowfullscreen></iframe>
+
 paper written by deepfacelab
 https://arxiv.org/abs/2005.05535
 
