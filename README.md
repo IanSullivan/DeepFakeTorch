@@ -25,7 +25,7 @@ python facedetect.py -video_src data_dst.mp4 -out_name b
 
 ### Train Model
 ```shell
-python train.py -face_a_dir[location of first faces] -face_b_dir[location of seconds faces] -n_steps 100000
+python train.py -face_a_dir a -face_b_dir b] -n_steps 100000
 ```
 
 ---
