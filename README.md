@@ -13,7 +13,11 @@ pip install requirments.txt
 ```
 
 ### How it works
+youtube video
 https://www.youtube.com/watch?v=XqluthtTenI 
+
+paper written by deepfacelab
+https://arxiv.org/abs/2005.05535
 
 ### Extract Faces
 ```shell
