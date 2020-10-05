@@ -5,7 +5,7 @@
 You will need to install cmake first (required for dlib, which is used for face alignment).
 
 ```shell
-conda create torchfakes
+conda create --name torchfakes
 activate torchfakes
 git clone https://github.com/IanSullivan/DeepFakeTorch.git
 cd DeepFakeTorch
@@ -20,19 +20,6 @@ python facedetect.py
 ---
 
 ## Results
-
+Training after 10,000 steps
 <img src="images/swapped.gif">
 <img src="images/b_to_a.gif">
-
-```python
-
-
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
-```
-
----
