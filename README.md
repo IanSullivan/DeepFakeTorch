@@ -3,6 +3,7 @@
 ### Installation
 
 You will need to install cmake first (required for dlib, which is used for face alignment).
+You will also need to download shape_predictor_68_face_landmarks.dat for dlib, put it in the main folder
 
 ```shell
 conda create --name torchfakes
