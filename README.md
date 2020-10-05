@@ -25,14 +25,14 @@ python facedetect.py -video_src data_dst.mp4 -out_name b
 
 ### Train Model
 ```shell
-python train.py -face_a_dir a -face_b_dir b] -n_steps 100000
+python train.py -face_a_dir a -face_b_dir b -n_steps 100000
 ```
 
 ---
 
 ### Write Video
 ```shell
-python video_writer.py -original_video [src video] -model_location saved_models/model.pt -out_name myswappedvideo -decoder [either 'a' or 'b']
+python video_writer.py -original_video [video name] -model_location saved_models/model.pt -out_name myswappedvideo -decoder [either 'a' or 'b']
 ```
 
 ---
