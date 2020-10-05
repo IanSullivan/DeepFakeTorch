@@ -20,6 +20,6 @@ python facedetect.py
 ---
 
 ## Results
-Training after 10,000 steps
+Training after 10,000 steps <br>
 <img src="images/swapped.gif">
 <img src="images/b_to_a.gif">
