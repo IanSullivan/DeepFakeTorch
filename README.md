@@ -1,4 +1,4 @@
-# DeepFakeTorch
+# Deep Fakes PyTorch
 
 ### Installation
 
