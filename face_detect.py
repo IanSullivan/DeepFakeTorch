@@ -5,6 +5,7 @@ import cv2
 from PIL import Image
 from img_rotate import rotate
 import os
+import argparse
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 print('Running on device: {}'.format(device))
@@ -37,17 +38,25 @@ def extract_face(frame, align=True, margin=5):
 
 
 if __name__ == '__main__':
-    outdir = 'elon'
-    full_dir = os.path.join(outdir, 'aligned_faces')
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-video_src', type=str, required=True, help='where to save the images')
+    parser.add_argument('-out_name', type=str, required=True, help='The name of the output movie')
+    parser.add_argument('-margin', type=int, default=5, help='margin around the detected face box')
+    parser.add_argument('-align_faces', type=int, default=5, help='align the faces')
+
+    args = parser.parse_args()
+    full_dir = os.path.join(args.out_name, 'aligned_faces')
+
     if not os.path.exists(full_dir):
         os.makedirs(full_dir)
-    cap = cv2.VideoCapture('data_src.mp4')
+
+    cap = cv2.VideoCapture(args.video_name)
     i = 0
     while cap.isOpened():
         ret, frame = cap.read()
         if ret:
             try:
-                crop_img = extract_face(frame)
+                crop_img = extract_face(frame, margin=args.margin)
                 crop_img.save(full_dir + "/{}.png".format(str(i).zfill(4)))
                 print('\rTracking frame: {}'.format(i + 1), end='')
                 i += 1
