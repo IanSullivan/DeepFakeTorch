@@ -12,6 +12,9 @@ cd DeepFakeTorch
 pip install requirments.txt
 ```
 
+### How it works
+https://www.youtube.com/watch?v=XqluthtTenI 
+
 ### Extract Faces
 ```shell
 python facedetect.py -video_src data_src.mp4 -out_name [directory a or b]
